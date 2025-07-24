@@ -57,3 +57,10 @@ var response = await client.PostAsync("https://your-account.snowflakecomputing.c
 
 ````
 
+
+
+#### Resources
+
+* https://learn.microsoft.com/en-us/answers/questions/2280672/how-to-connect-to-snowflake-using-net
+
+* https://docs.snowflake.com/en/user-guide/key-pair-auth
