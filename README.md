@@ -15,6 +15,7 @@ Based on the documentation, ensure your JWT meets these requirements:
 - Key Size: Minimum 2048-bit RSA key pair
 - Token Lifetime: Recommended maximum 59 minutes
 
+
 #### Prerequisites
 
 Before using this code:
@@ -23,12 +24,14 @@ Before using this code:
 -Assign Public Key: Assign the public key to your Snowflake user using ALTER USER
 -Verify Setup: Test withSnowSQL using the private key1
 
+
 #### Usage with Snowflake APIs
 
 Once you have the JWT token, use it in your API calls:
 
 
 ````
+
 // Example HTTP client usage
 var client = new HttpClient();
 client.DefaultRequestHeaders.Authorization = 
@@ -37,5 +40,5 @@ client.DefaultRequestHeaders.Authorization =
 // Make your Snowflake API calls
 var response = await client.PostAsync("https://your-account.snowflakecomputing.com/api/v2/statements", content);
 
-```
+````
 
