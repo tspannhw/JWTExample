@@ -16,6 +16,13 @@ Based on the documentation, ensure your JWT meets these requirements:
 - Token Lifetime: Recommended maximum 59 minutes
 
 
+#### Versions
+
+Alternative Simplified Version (for unencrypted keys) - SimpleSnowflakeJwtGenerator.cs
+
+For encrypted keys - SnowflakeJwtGenerator.cs
+
+
 #### Prerequisites
 
 Before using this code:
@@ -23,6 +30,14 @@ Before using this code:
 -Generate RSA Key Pair: Use OpenSSL to generate your public/private key pair
 -Assign Public Key: Assign the public key to your Snowflake user using ALTER USER
 -Verify Setup: Test withSnowSQL using the private key1
+
+.NET Package Requirements
+
+````
+<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.3" />
+<PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+````
 
 
 #### Usage with Snowflake APIs
